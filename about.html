@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="icon" href="c:\VSCODE\.vscode\New folder\New web\drive-download-20240514T011241Z-001\New folder\Logo2.png" type="png">
+    <style>
+        /* Your existing CSS here... */
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="logoB">
+            <img src="c:\VSCODE\.vscode\New folder\New web\drive-download-20240514T011241Z-001\New folder\Logo1.png" alt="" class="logoB-img">
+        </div>
+        <div class="menu-toggle" onclick="toggleNavbar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav id="navbar">
+            <a href="about.html" class="nav-item">About Us</a>
+            <a href="products.html" class="nav-item">Products</a>
+            <a href="services.html" class="nav-item">Services</a>
+            <a href="news.html" class="nav-item">Partners</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+          
+
+            
+        </nav>
+        <div class="container2">
+            <div class="logo1">
+                <img src="Logo1.png" alt="" class="logo1-img">
+            </div>  
+            <div class="content1">
+                <p><b>Fast Reliant Automation</b> and solutions for food <br>and beverages <b>Manufacturing Industries,</b> where <br>everything and everyone is convenient.</p>
+            </div>
+        </div>
+        <div class="main">
+            <h1 class="h1F"> </h1>
+        </div>
+        <div class="padding1">
+
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="pic1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="pic2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="pic3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="pic4.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+
+    <script>
+        let slideIndex = 0;
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
+
+showSlides(); // Initialize the slideshow
+
+function plusSlides(n) {
+    slideIndex += n - 1;
+    showSlides();
+}
+
+function toggleNavbar() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.style.display === "block") {
+        navbar.style.display = "none";
+    } else {
+        navbar.style.display = "block";
+    }
+}
+
+    </script>
+
+    <div class="Vision">
+        <div class="second-page-content">
+            <h2 class="second-page-title">Our Vision</h2>
+            <p class="second-page-text">To be a provider of Machinery and
+                Automation solutions for the Food and
+                Beverages manufacturing companies
+                in the Philippines and parts of South
+                East Asia. We aim to provide the best
+                suitable option based on our clients
+                needs that will be economically viable
+                and reaching expected results. </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Boomerang Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

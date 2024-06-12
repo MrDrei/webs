@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#navbar {
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 20px 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-item:hover {
+    color: orange;
+}
+
+.content {
+    padding: 20px;
+}
+
+.logoB {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 250px;
+}
+
+.logoB-img {
+    max-width: 200px;
+    height: auto;
+    
+}
+
+.logo1 {
+    margin-top: 250px;
+    margin-left: 80px;
+    transform: translateY(-50%);
+}
+
+.container1 {
+    display: block;
+    background: linear-gradient(5deg, rgb(134, 134, 134), rgb(0, 0, 0));
+    height: 900px;
+}
+
+.container2 {
+    display: flex;
+}
+
+.logo1-img {
+    max-width: 800px;
+}
+
+.content1 {
+    font-size: larger;
+    margin-top: 280px;
+    margin-left: -260px;
+}
+
+.content1 b {
+    font-size: 31px;
+    color: rgb(240, 109, 33);
+}
+
+.container1 nav a i {
+    color: white; 
+}
+
+.search-icon:hover {
+    color: orange;
+}
+
+#navbar .nav-item {
+    position: relative;
+    transition: opacity 1s ease;
+}
+
+#navbar .nav-item:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    content: '.';
+    color: transparent;
+    background: orange;
+    height: 1px;
+    transition: width 0.5s ease;
+    opacity: 0;
+}
+
+#navbar .nav-item:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+.padding1 {
+    padding: 40px;
+    width: 100px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Hide any overflow */
+    height: 100vh; /* Adjust height as needed */
+}
+
+
+.mySlides {
+    display: none;
+    width: 100%;
+    transition: opacity 3s ease-in-out; /* Smooth transition */
+    position: absolute; /* Ensure the slides overlap */
+    top: 0;
+    left: 0;
+}
+
+.mySlides.fade-in {
+    opacity: 1;
+    z-index: 1; /* Bring the current slide to the front */
+}
+
+.mySlides.fade-out {
+    opacity: 0;
+    z-index: 0; /* Send the previous slide to the back */
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 6px 6px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(231, 98, 9, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+}
+
+.Vision {
+    background-color: #d6d6d6;
+    padding: 60px 0;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.second-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.second-page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.second-page-text {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 768px) {
+    .logoB {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-align: left;
+    }
+    
+    .logoB-img {
+        max-width: 100px;
+    }
+    
+    .logo1 {
+        margin: 20px auto;
+        transform: translateY(0);
+        text-align: center;
+    }
+    
+    .logo1-img {
+        max-width: 100%;
+    }
+    
+    .content1 {
+        font-size: medium;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .container2 {
+        display: block;
+        text-align: center;
+    }
+    
+    .slideshow-container {
+        width: 100%;
+    }
+    
+    .prev, .next {
+        font-size: 24px;
+        padding: 12px;
+    }
+    
+    #navbar {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .nav-item {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .Vision {
+        padding: 30px 0;
+    }
+    
+    .second-page-title {
+        font-size: 24px;
+    }
+    
+    .second-page-text {
+        font-size: 16px;
+    }
+
+    .container1 {
+        background: linear-gradient(5deg, rgb(134, 134, 134), rgb(0, 0, 0));
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #navbar {
+        display: none; /* Hide the navbar by default */
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .menu-toggle i {
+        font-size: 24px;
+    }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}

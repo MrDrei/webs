@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="icon" href="c:\VSCODE\.vscode\New folder\New web\drive-download-20240514T011241Z-001\New folder\Logo2.png" type="png">
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <nav id="navbar">
+            <a href="about.html" class="nav-item">About Us</a>
+            <a href="products.html" class="nav-item">Products</a>
+            <a href="services.html" class="nav-item">Services</a>
+            <a href="news.html" class="nav-item">Partners</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+            
+
+        </nav>
+        <div class="logoB">
+            <img src="c:\VSCODE\.vscode\New folder\New web\drive-download-20240514T011241Z-001\New folder\Logo1.png" alt="" class="logoB-img">
+        </div>
+        <div class="services">
+            <h1>Services</h1>
+            <p>" Empowering Excellence, One Service at a Time "</p>
+        </div>
+        <hr>
+        <div class="slideshow-container">
+            <div class="Slides fade">
+                <img src="W1.png">
+            </div>
+        
+            <div class="Slides fade">
+                <img src="W2.png">
+            </div>
+        
+            <div class="Slides fade">
+                <img src="W3.png">
+            </div>
+        
+            <div class="Slides fade">
+                <img src="W4.png">
+            </div>
+            <div class="Slides fade">
+                <img src="w5.png">
+            </div>
+        
+            <div class="Slides fade">
+                <img src="w6.png">
+            </div>
+        
+            <div class="Slides fade">
+                <img src="w7.png">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="services-container">
+            <div class="service-card">
+                <img src="Installing of steam ovens.jpg" alt="Steam Ovens">
+                <div class="content">
+                    <h3>Delivery and Assembling Steam Ovens</h3>
+                    <p>Comprehensive service that involves the transportation and installation of steam ovens. This service typically includes the careful handling and transportation of the ovens to the desired location, ensuring they arrive safely and without damage. Once at the location, the service providers are responsible for assembling the ovens according to manufacturer specifications. This process involves unpacking the ovens, positioning them correctly, and connecting them to the necessary utilities such as electricity and water.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="c2.png" alt="Spiral Freezers">
+                <div class="content">
+                    <h3>Installing of Spiral Freezers</h3>
+                    <p>This service involves the careful installation of the freezer equipment according to the manufacturer's specifications and industry standards. It includes tasks such as positioning the freezer units in the designated area, assembling the components, connecting them to the necessary power and refrigeration systems, and ensuring that all safety and operational requirements are met. Proper installation is critical to the performance and efficiency of spiral freezers, as it affects factors such as temperature control, airflow, and product handling.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="spiral freezer in production.jpg" alt="Spiral Freezers in Production">
+                <div class="content">
+                    <h3>Installation of Spiral Freezers in Production</h3>
+                    <p> Involves integrating spiral freezers into existing production lines or new facilities where food processing occurs. This process requires careful planning and coordination to ensure that the freezers are installed efficiently and effectively. It includes tasks such as determining the optimal location for the freezers within the production facility, preparing the site for installation, assembling the freezers according to specifications, and integrating them into the production line. </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="Cc3.png" class="c3" alt="Production of Chicken Products">
+                <div class="content">
+                    <h3>Production of Chicken Products</h3>
+                    <p>Refers to the process of manufacturing various food items derived from chicken. This process typically starts with the selection of high-quality chicken meat, which is then processed into different products such as chicken nuggets, sausages, burgers, and fillets. The production process involves several steps, including cleaning, cutting, marinating, and cooking the chicken meat. Depending on the final product, additional ingredients such as spices, breading, and sauces may be added to enhance flavor and texture. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("Slides");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+showSlides(slideIndex);
+    </script>
+     <footer>
+        <p>&copy; Boomerang Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
